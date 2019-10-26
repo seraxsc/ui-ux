@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HR-form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+    <form action="index.html">
+        <h1>Вакансия: Junior Frontend Developer</h1>
+        <div class="form_head">
+            <img src="./photo.png" alt="фотка">
+            <div>
+                <p><b>Имя:</b> Сергей Романюта</p>
+                <p><b>Опыт работы:</b> нет?</p>
+                <a href="./chat.html">Обсудить</a>
+            </div>
+        </div>
+        <div class="form-group form_input">
+            <label class="h_label" for="interview_date">Дата собеседования:</label>
+            <input type="date" class="form-control" id="interview_date">
+        </div>
+        <div class="english">
+            <label class="h_label">Уровень английского:</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Плохо</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Средне</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                <label class="form-check-label" for="inlineRadio3">Хорошо</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" disabled>
+                <label class="form-check-label" for="inlineRadio4">Превосходно</label>
+            </div>
+        </div>
+        <div>
+            <label class="h_label">Ключевые навыки:</label>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Не делать домашки</li>
+            </ul>
+            <div class="form-group form_input">
+                <input type="text" class="form-control" id="new_skill" placeholder="Введите навык...">
+                <button type="button" id="new_skill_btn" class="btn btn-outline-secondary">Добавить навык</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="h_label" for="inputState">Коммуникабельность:</label>
+            <select id="inputState" class="form-control">
+                <option selected>Имеется</option>
+                <option>Что это?</option>
+                <option>Отвали, а?</option>
+            </select>
+        </div>
+        <div class="form-group form_input">
+            <label class="h_label" for="salary">Желаемая ЗП:</label>
+            <input type="number" class="form-control" id="salary">
+        </div>
+        <div class="english">
+            <label class="h_label">Подходит по критериям:</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="inlinecheckbox1" value="option1">
+                <label class="form-check-label" for="inlinecheckbox1">Знание английского</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="inlinecheckbox2" value="option2">
+                <label class="form-check-label" for="inlinecheckbox2">Оклад</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="inlinecheckbox3" value="option3">
+                <label class="form-check-label" for="inlinecheckbox3">Навыки</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="inlinecheckboxOptions" id="inlinecheckbox4" value="option4">
+                <label class="form-check-label" for="inlinecheckbox4">Сразу видно, свой человек</label>
+            </div>
+        </div>
+        <div>
+            <label class="h_label">Образование, курсы и т.п.:</label><br>
+            <table class="education">
+                <tr>
+                    <td>#</td>
+                    <td>Сроки обучения</td>
+                    <td>Наименование учебного заведения, курсов</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

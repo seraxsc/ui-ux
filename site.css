@@ -1,0 +1,118 @@
+body {
+    padding: 20px;
+}
+
+.h_label {
+    font-weight: bold;
+}
+
+/*
+    INDEX
+*/
+
+
+body form {
+    width: 420px;
+}
+
+.form_head {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form_head img {
+    height: 150px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.form_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.form_input input {
+    width: 230px;
+}
+
+.english {
+    margin-bottom: 10px;
+}
+
+.education td {
+    border: 1px solid black;
+    padding: 0px 5px 5px;
+}
+
+/*
+    CHAT
+*/
+
+.gridbody {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 800px minmax(100px, 1fr);
+}
+
+.chat_section {
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.chat_head {
+    height: 70px;
+    padding: 15px 10px 10px;
+    background-color: #e2f5f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.chat_left {
+    position: absolute;
+    width: 150px;
+    height: 528px;
+    background-color: #bedddb;
+    z-index: -1;
+}
+
+.message_container {
+    overflow-y: scroll;
+    height: 528px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 8px 10px;
+    display: flex;
+}
+
+.message_circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #e2f5f4;
+    text-align: center;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 2px;
+    flex-shrink: 0;
+}
+
+.message_time {
+    width: 90px;
+    font-size: 0.8em;
+    padding: 6px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.message_text {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 20px 0px;
+}
